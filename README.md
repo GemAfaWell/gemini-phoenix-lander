@@ -1,6 +1,6 @@
 # Landing Page for Gemini Phoenix
 
-[Github hosted page](https://)
+[Github hosted page](https://https://geminipowell.github.io/gp-lander/)
 
 As my *first solo developer project* written using my newfound command of the JavaScript language, I decided to take the opportunity to, for lack of better colloquialism, 'kill two birds with one stone.'
 
