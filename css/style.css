@@ -1,0 +1,179 @@
+/* Pagewide Styles */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Body Styles */
+body {
+	font: 24px "Ubuntu", sans-serif;
+	background-image: repeating-radial-gradient(circle, rgba(0,0,204,1), rgba(173,53,0,1), rgba(0.0.0.1), rgba(76,0,153,1), rgba(255,255,0,1));
+	text-align: center;
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+
+/* Header Styles */
+header {
+	font: bold 64px "Red Hat Display", sans-serif;
+	text-align: center;
+	justify-content: center;
+	color: white;
+	width: 100%;
+}
+/* important. imagery. */
+header h1 {
+  	line-height: 100px;
+  	background-image: url("file:///Users/twinfreedom/Desktop/Landing%20Page/Photos/victim-collage.png");
+  	background-repeat: repeat;
+  	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.33);
+}
+header div a{
+	padding: 0.5px;
+	margin: 0.25px;
+	border: 0.25px;
+	box-shadow: inset 5px 5px rgba(0, 0, 0, 0.33);
+	text-decoration: none;
+}
+
+/* Section Divider Styles */
+hr {
+	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+	font: serif;
+	text-align: center;
+	justify-content: center;
+}
+footer a {
+	color: white;
+}
+footer a:hover {
+	color: black;
+}
+
+/* Section and Container Styles */
+.lpc {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: 100%;
+	row-gap: 50px;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
+
+section {
+	border: 1px solid purple;
+	padding-bottom: 15px;
+	box-shadow: inset 0 0 8px 8px white, inset 0 0 3px 2px white;
+	background: repeating-radial-gradient(rgba(0,0,0,0.5), rgba(128,128,128,0.5), rgba(255,255,255,0.5));
+	border-radius: 15px;
+}
+
+img {
+	width: 250px;
+	height: 250px;
+}
+
+
+/* NavBar Styles */
+
+/* Color it! */
+.evolutionav {
+	background-color: rgba(173,53,0,0.41);
+	overflow: hidden;
+	display: flex;
+	float: right;
+}
+
+/* Make the links pretty! */
+.evolutionav a, button {
+	display: inline-block;
+	color: white;
+	text-align: right;
+	padding: 10px;
+	font: 32px "Ubuntu", sans-serif;
+	border: 1px solid black;
+
+}
+
+/* Color 'em when we hover! */
+.evolutionav a:hover, .dropdown:hover .more {
+	background-color: white;
+	color: rgba(76,0,153,0.7);
+}
+
+/* Make active-class to highlight the part of the page we're on now */
+.evolutionav a.active {
+	background-color: white;
+	color: rgba(173,53,0,1.0);
+}
+
+/* Hide the burger! */
+.evolutionav .icon {
+	display: none;
+}
+
+/* Compensate for small screens by creating the burger opp for them */
+@media screen and (max-width: 640px) {
+	.evolutionav a:not(:first-child) {
+		display: none;
+	}
+	.evolutionav a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+/* Make the navigation bar small-screen-friendly! */
+@media screen and (max-width: 640px) {
+	.evolutionav.responsive {position: relative;}
+	.evolutionav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.evolutionav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+/* Responsive Dropdown */
+.dropdown {
+	overflow: hidden;
+	width: 50%;
+}
+.dropdown .more {
+	color: rgba(255,255,0,0.8);
+	background-color: inherit;
+	font-family: inherit;
+}
+.songs {
+	display: none;
+	position: absolute;
+	background-color: purple;
+	min-width: 100px;
+	box-shadow: 0px 5px 10px 0px rgba(,0,0,0.2);
+	z-index: 1;
+}
+.songs a, .more {
+	display: block;
+	text-align: center;
+	padding: 0;
+}
+.songs a:hover {
+	background-color: rgba(255,255,0,0.7);
+}
+.dropdown:hover .songs {
+	display: block;
+}
