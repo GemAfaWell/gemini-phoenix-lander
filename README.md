@@ -1,8 +1,8 @@
 # Landing Page for Gemini Phoenix
 
-[Github hosted page](https://)
+[Github hosted page](https://geminipowell.github.io/gp-lander/)
 
-As my *first solo developer project* written using my newfound command of the JavaScript language, I decided to take the opportunity to, for lack of better colloquialism, 'kill two birds with one stone.'
+As my ***capstone project for the Udacity Front-End Nanodegree Programn,*** and my **first solo developer project** written using my newfound command of the JavaScript language, I decided to take the opportunity to, for lack of better colloquialism, 'kill two birds with one stone.'
 
 This page also doubles as the beginning frameworks for my official website as a musician.
 My stage name is Gemini Phoenix.
@@ -18,7 +18,6 @@ Sources:
 	<li>[w3Schools (Dropdown)](https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp)</li>
 	<li>[w3Schools (jQuery)](https://www.w3schools.com/jquery/jquery_get_started.asp)</li>
 	<li>[Codepen (more animated CSS for the active section)](https://codepen.io/mike-schultz/pen/NgQvGO)</li>
-	<li>[w3Schools (hiding navbar on scroll)](https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp)</li>
 </ul>
 
 ©2022 Gemini Powell
