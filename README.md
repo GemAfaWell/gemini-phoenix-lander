@@ -12,7 +12,7 @@ This Responsive Landing Page demonstrates intermediate-level mastery of HTML, CS
 Sources:
 <html>
 	<ul>
-		<li><a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp"w3Schools (Responsive Navigation Bar)</a></li>
+		<li><a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp">w3Schools (Responsive Navigation Bar)</a></li>
 		<li><a href="https://css-tricks.com/a-handy-little-system-for-animated-entrances-in-css/">CSS-Tricks (animated CSS)</a></li>
 		<li><a href="https://cubic-bezier.com">cubic-bezier by Lea Verou (animated CSS)</a></li>
 		<li><a href="https://codepen.io/s1mpson/pen/MWKYMEe">#BlackLivesMatter font, Max Mykhalchuk (CSS font for header)</a></li>
