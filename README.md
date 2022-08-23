@@ -7,7 +7,7 @@ As my ***capstone project for the Udacity Front-End Nanodegree Programn,*** and 
 This page also doubles as the beginning frameworks for my official website as a musician.
 My stage name is Gemini Phoenix.
 
-This Responsive Landing Page demonstrates intermediate-level mastery of HTML, CSS, and JavaScript frameworks, including appropriately-linked scripts, DOM manipulation through the HTML, a responsive navigation bar, and active state elements. Upon a certain interaction when greeting the page, a little 'elevator music' plays in the background as you browse. (HINT: It's an easter egg for my upcoming EP!)
+This Responsive Landing Page demonstrates intermediate-level mastery of HTML, CSS, and JavaScript frameworks, including appropriately-linked scripts, DOM manipulation, a responsive navigation bar, and active state elements. Upon a certain interaction when greeting the page, a little 'elevator music' plays in the background as you browse. (HINT: It's an easter egg for my upcoming EP!)
 
 Sources:
 <html>
