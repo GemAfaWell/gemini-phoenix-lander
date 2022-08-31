@@ -138,9 +138,14 @@ img {
 	color: rgba(173,53,0,1.0);
 }
 
-/* Hide the burger! */
-.evolutionav .icon {
-	display: none;
+/* Burger Menu! */
+.evolutionav a.icon {
+	display: block;
+	background: black;
+	position: absolute; 
+	right: 0;
+	top: 0;
+	
 }
 
 /* Compensate for small screens by creating the burger opp for them */
