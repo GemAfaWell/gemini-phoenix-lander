@@ -140,7 +140,7 @@ img {
 
 /* Burger Menu! */
 .evolutionav a.icon {
-	display: none;
+	display: hidden;
 	background: black;
 	position: absolute; 
 	right: 0;
