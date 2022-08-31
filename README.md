@@ -19,6 +19,7 @@ Sources:
 		<li><a href="https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp">w3Schools (Dropdown)</a></li>
 		<li><a href="https://www.w3schools.com/jquery/jquery_get_started.asp">w3Schools (jQuery)</a></li>
 		<li><a href="https://codepen.io/mike-schultz/pen/NgQvGO">Codepen (more animated CSS for the active section)</a></li>
+		<li> <a href="https://www.w3schools.com/howto/howto_js_mobile_navbar.asp">w3Schools (mobile navbar)</a></li>
 	</ul>
 </html>
 
