@@ -1,21 +1,22 @@
+
 //first function: creating the responsive navigation bar!
 
 //define those variables
-const evolutionav = document.getElementById("evolutionav");
+const evolutionav = document.getElementsByClassName("evolutionav");
 const navinav = document.getElementById("section");
 
 //write the function to make the nav bar
 let issaNavBar = () => {
-	//give a variable to the elements being plugged in
+	//define the variable
 	let a = evolutionav;
-	//if its class name is STRICTLY this particular const variable
-	if (a.className === evolutionav) {
+	//if its class name is STRICTLY one of the particular classes that can be grouped
+	if (a.className === "evolutionav") {
 		//we'll make it responsive, so we can use it in the top navigation
 		a.className += " responsive";
 		//otherwise...
 	} else {
 		//it won't get added to the bunch
-		a.className = evolutionav;
+		a.className = "evolutionav";
 	}
 };
 //let's make the nav bar actually work!
@@ -63,14 +64,8 @@ window.addEventListener("scroll", (e) => {
 	setTimeout(1000);
 });
 
-//hamburger menu
-let hamberders = () => {
-	let dropdown = document.querySelectorAll(".dropdown");
-	for (let i = 0; i <= dropdown.length; i++) {
-		if (i.style.display === "block") {
-			i.style.display = "none";
-		} else {
-			i.style.display = "block";
-		}
-	}
-};
+//mobile nav bar operability
+$('.icon').on('click', (e) => {
+	e.preventDefault();
+	$(".evolutionav").toggleClass("evolutionav responsive");
+})

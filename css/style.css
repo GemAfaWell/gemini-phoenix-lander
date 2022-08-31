@@ -111,17 +111,16 @@ img {
 	display: flex;
 	float: right;
 	position: relative;
-	top: 0;
 	transition: top 0.5s;
 }
 
 /* Make the links pretty! */
-.evolutionav a, button {
+.evolutionav a {
 	display: inline-block;
 	color: white;
-	text-align: right;
-	padding: 10px;
-	font: 32px "Ubuntu", sans-serif;
+	text-align: center;
+	padding: 5px;
+	font: 32px solid white "Ubuntu", sans-serif;
 	border: 1px solid black;
 
 }
@@ -138,67 +137,36 @@ img {
 	color: rgba(173,53,0,1.0);
 }
 
-/* Burger Menu! */
 .evolutionav a.icon {
-	display: hidden;
-	background: black;
-	position: absolute; 
-	right: 0;
-	top: 0;
-	
+	display: none;
 }
-
 /* Compensate for small screens by creating the burger opp for them */
 @media screen and (max-width: 640px) {
-	.evolutionav a:not(:first-child) {
+	.evolutionav a {
 		display: none;
 	}
+
 	.evolutionav a.icon {
 		float: right;
 		display: block;
 	}
-}
-
-/* Make the navigation bar small-screen-friendly! */
-@media screen and (max-width: 640px) {
-	.evolutionav.responsive {position: relative;}
+	.evolutionav.responsive {
+		overflow: hidden;
+		position: relative;
+	}
 	.evolutionav.responsive a.icon {
 		position: absolute;
+		display: block;
 		right: 0;
 		top: 0;
 	}
 	.evolutionav.responsive a {
-		float: none;
+		float: right;
 		display: block;
+		text-align: center;
+		color: white;
+		padding: 5px;
+		font: 32px solid white "Ubuntu", sans-serif;
+		border: 1px solid black;
 	}
-}
-
-/* Responsive Dropdown */
-.dropdown {
-	overflow: hidden;
-	width: 50%;
-}
-.dropdown .more {
-	color: rgba(255,255,0,0.8);
-	background-color: inherit;
-	font-family: inherit;
-}
-.songs {
-	display: none;
-	position: absolute;
-	background-color: purple;
-	min-width: 100px;
-	box-shadow: 0px 5px 10px 0px rgba(,0,0,0.2);
-	z-index: 1;
-}
-.songs a, .more {
-	display: block;
-	text-align: center;
-	padding: 0;
-}
-.songs a:hover {
-	background-color: rgba(255,255,0,0.7);
-}
-.dropdown:hover .songs {
-	display: block;
 }
