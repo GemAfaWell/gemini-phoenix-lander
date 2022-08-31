@@ -64,3 +64,13 @@ window.addEventListener("scroll",(e) => {
 	})
 	setTimeout(1000);
 })
+
+//hamburger menu
+let hamberders = () => {
+	let x = document.getElementsByClassName("dropdown");
+	if (x.style.display === "block") {
+		x.style.display = "none"
+	} else {
+		x.style.display = "block"
+	}
+}
