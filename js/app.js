@@ -1,5 +1,3 @@
-
-
 //first function: creating the responsive navigation bar!
 
 //define those variables
@@ -27,7 +25,7 @@ let makeItWork = () => {
 		//define your variables, aka, what you're pulling for your function
 		let list = document.createElement("li");
 		let anchorElement = document.createElement("a");
-		let liText = i.getAttribute(section);
+		let liText = i.getAttribute("section");
 		//connect elements to the page and vice versa
 		anchorElement.innerHTML = liText;
 		anchorElement.setAttribute("href", "#" + i.id);
@@ -35,17 +33,17 @@ let makeItWork = () => {
 		//connect it to the nav bar
 		evolutionav.appendChild(list);
 		//event listener for smooth scrolling
-		list.addEventListener ('click', function(e){
+		list.addEventListener ('click', (e) => {
 			e.preventDefault;
 			i.scrollIntoView({
 				behavior: "smooth"
 			});
 		});
 	}
-}
+};
 
 //activate each section
-window.addEventListener("scroll",(e) => {
+window.addEventListener("scroll", (e) => {
 	//define your function variable to pull the sections
 	let pieces = document.querySelectorAll("section");
 	//iterate over the selection
@@ -61,18 +59,18 @@ window.addEventListener("scroll",(e) => {
 			//keep it as is
 			section.classList.remove("active");
 		}
-	})
+	});
 	setTimeout(1000);
-})
+});
 
 //hamburger menu
 let hamberders = () => {
 	let dropdown = document.getElementById("dropdown");
-	for (let i = 0; i <= dropdown.length, i++) {
-		if (x.style.display === "block") {
-			x.style.display = "none"
+	for (let i = 0; i <= dropdown.length; i++) {
+		if (i.style.display === "block") {
+			i.style.display = "none";
 		} else {
-			x.style.display = "block"
+			i.style.display = "block";
 		}
 	}
-}
+};
