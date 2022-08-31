@@ -65,7 +65,7 @@ window.addEventListener("scroll", (e) => {
 
 //hamburger menu
 let hamberders = () => {
-	let dropdown = document.getElementById("dropdown");
+	let dropdown = document.querySelectorAll(".dropdown");
 	for (let i = 0; i <= dropdown.length; i++) {
 		if (i.style.display === "block") {
 			i.style.display = "none";
