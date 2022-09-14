@@ -21,6 +21,7 @@ Sources:
 		<li><a href="https://codepen.io/mike-schultz/pen/NgQvGO">Codepen (more animated CSS for the active section)</a></li>
 		<li> <a href="https://www.w3schools.com/howto/howto_js_mobile_navbar.asp">w3Schools (mobile navbar)</a></li>
 		<li><a href="https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link">Stack Overflow (smooth scroll)</a></li>
+		<li><a href="https://www.w3schools.com/howto/howto_css_responsive_text.asp">w3Schools (responsive text for mobile)</a></li>
 	</ul>
 </html>
 
