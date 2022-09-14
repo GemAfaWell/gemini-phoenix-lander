@@ -1,172 +1,151 @@
-/* Pagewide Styles */
-html {
-	scroll-behavior: smooth;
-}
-
-/* Body Styles */
-body {
-	font: 24px "Ubuntu", sans-serif;
-	background-image: repeating-radial-gradient(circle, rgba(0,0,204,1), rgba(173,53,0,1), rgba(0.0.0.1), rgba(76,0,153,1), rgba(255,255,0,1));
-	text-align: center;
-	color: white;
-	width: 100%;
-	height: 100%;
-}
-
 /* Header Styles */
 header {
-	font: bold 64px "Red Hat Display", sans-serif;
-	text-align: center;
-	justify-content: center;
-	color: white;
-	width: 100%;
+    font: bold "Red Hat Display", sans-serif;
+    font-size: 48px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
 }
 /* important. imagery. */
 header h1 {
-  	line-height: 100px;
-  	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.33);
+    line-height: 250px;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.33);
 }
-header div a{
-	padding: 0.5px;
-	margin: 0.25px;
-	border: 0.25px;
-	box-shadow: inset 5px 5px rgba(0, 0, 0, 0.33);
-	text-decoration: none;
+header div a {
+    padding: 0.5px;
+    margin: 0.25px;
+    border: 0.25px;
+    box-shadow: inset 5px 5px rgba(0, 0, 0, 0.33);
+    text-decoration: none;
 }
-
+.elevators {
+    text-align: center;
+    top: 0;
+}
+/* Body Styles */
+body {
+    font: 24px "Ubuntu", sans-serif;
+    background-image: repeating-radial-gradient(circle, rgba(0, 0, 204, 1), rgba(173, 53, 0, 1), rgba(0.0.0.1), rgba(76, 0, 153, 1), rgba(255, 255, 0, 1));
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
 /* Section Divider Styles */
 hr {
-	width: 80%;
-	margin-top: 20px;
-	margin-bottom: 20px;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
 /* Footer Styles */
 footer {
-	font: serif;
-	text-align: center;
-	justify-content: center;
+    font: serif;
+    text-align: center;
+    justify-content: center;
 }
 footer a {
-	color: white;
+    color: white;
 }
 footer a:hover {
-	color: black;
+    color: black;
 }
-
 /* Section and Container Styles */
 @keyframes colors {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+   }
+    50% {
+        background-position: 100% 50%;
+   }
+    100% {
+        background-position: 0% 50%;
+   }
 }
-
-.active{
-	content: '';
-	position: relative;
-	background: linear-gradient(120deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-	z-index: -1;
-	animation: 1s infinite;
+.active {
+    content: '';
+    position: relative;
+    background: linear-gradient(120deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    z-index: -1;
+    animation: 1s infinite;
 }
-
 .lpc {
-	display: flex;
-	flex-direction: column;
-	width: 80%;
-	height: 100%;
-	row-gap: 50px;
-	text-align: center;
-	justify-content: center;
-	margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    row-gap: 50px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
 }
-
-
 section {
-	padding-bottom: 15px;
-	box-shadow: inset 0 0 8px 8px white, inset 0 0 3px 2px white;
-	background: repeating-radial-gradient(rgba(0,0,0,0.5), rgba(128,128,128,0.5), rgba(255,255,255,0.5));
-	border-radius: 15px;
+    padding-bottom: 15px;
+    box-shadow: inset 0 0 8px 8px white, inset 0 0 3px 2px white;
+    background: repeating-radial-gradient(rgba(0, 0, 0, 0.5), rgba(128, 128, 128, 0.5), rgba(255, 255, 255, 0.5));
+    border-radius: 15px;
 }
-
 img {
-	width: 250px;
-	height: 250px;
+    width: 250px;
+    height: 250px;
 }
-
-
 /* NavBar Styles */
-
 /* Color it! */
 .evolutionav {
-	background-color: rgba(173,53,0,0.41);
-	overflow: hidden;
-	display: flex;
-	float: right;
-	position: relative;
-	transition: top 0.5s;
+    overflow: hidden;
 }
-
 /* Make the links pretty! */
+.evolutionav li a {
+    background-color: rgba(173, 53, 0, 0.41);
+    display: block;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font: 24px solid white "Ubuntu", sans-serif;
+    border: 1px solid black;
+    margin: 2px;
+}
+/* Color 'em when we hover, when we click, and when it's active! */
+.evolutionav a:hover, .evolutionav a:active {
+    background-color: white;
+    color: rgba(76, 0, 153, 0.7);
+}
+/* This hides the mobile menu */
 .evolutionav a {
-	display: inline-block;
-	color: white;
-	text-align: center;
-	padding: 5px;
-	font: 32px solid white "Ubuntu", sans-serif;
-	border: 1px solid black;
-
+    display: none;
 }
-
-/* Color 'em when we hover! */
-.evolutionav a:hover, .dropdown:hover .more {
-	background-color: white;
-	color: rgba(76,0,153,0.7);
-}
-
-/* Make active-class to highlight the part of the page we're on now */
-.evolutionav a.active {
-	background-color: white;
-	color: rgba(173,53,0,1.0);
-}
-
-.evolutionav a.icon {
-	display: none;
+.evolutionav li {
+    list-style: none;
 }
 /* Compensate for small screens by creating the burger opp for them */
-@media screen and (max-width: 640px) {
-	.evolutionav a {
-		display: none;
-	}
-
-	.evolutionav a.icon {
-		float: right;
-		display: block;
-	}
-	.evolutionav.responsive {
-		overflow: hidden;
-		position: relative;
-	}
-	.evolutionav.responsive a.icon {
-		position: absolute;
-		display: block;
-		right: 0;
-		top: 0;
-	}
-	.evolutionav.responsive a {
-		float: right;
-		display: block;
-		text-align: center;
-		color: white;
-		padding: 5px;
-		font: 32px solid white "Ubuntu", sans-serif;
-		border: 1px solid black;
-	}
+@media screen and (max-width: 768px) {
+    .evolutionav a {
+        display: none;
+   }
+    .evolutionav a.icon {
+        float: right;
+        display: block;
+   }
+}
+@media screen and (max-width: 768px) {
+    .evolutionav.responsive {
+        position: relative;
+   }
+    .evolutionav.responsive a.icon {
+        display: block;
+        right: 0;
+        top: 0;
+   }
+    .evolutionav.responsive a {
+        display: block;
+        float: none;
+        text-align: center;
+   }
+   /* fix the title font on tiny screens */
+    header h1 {
+        font-size: 15vw;
+        text-align: center;
+    }
 }
